@@ -18,10 +18,12 @@ interface TextProps {
       title2?: string;
       title3?: string;
       title4?: string;
+      title5?: string;
       description: string;
       description2?: string;
       description3?: string;
       description4?: string;
+      description5?: string;
     }
     contact: {
       nameLabel:string,
@@ -56,6 +58,8 @@ export const texts: TextProps = {
       description3: "The project has a great impact on society in terms of awakening to planetary defense and how important science is for the development of scientific dissemination in the world. While the children are having fun, they learn more about the asteroid and the psyche mission because, in some homes, there is information taken from the official NASA website from its discovery to the present.",
       title4: "Project Development",
       description4: "The team created the game using the CANVA application so that it could be printed, cut and assembled easily so that children could do it together with their parents and/or teachers. We also thought about environmental issues so that we don't use too many resources such as paper and printing too many pages, leaving the game on just one page and another with the items needed for gameplay.",
+      title5: "Our Future Goal",
+      description5: "For the game to be used in schools and distributed at STEM events for the entire population.",
     },
     contact: {
       nameLabel: 'Name',
@@ -83,6 +87,12 @@ export const texts: TextProps = {
       description: "Elaboramos um jogo divertido no formato de trilha espacial para que as crianças de 5 a 14 anos possam aprender sobre a missão e o asteroide Psyche de forma lúdica e interativa. Com o jogo de tabuleiro, as crianças desenvolvem a parte cognitiva, trabalha as emoções no momento de esperar sua vez de jogar, e a matemática no momento em que joga o dado e precisa contar as casas que irão se movimentar. Esse tipo de atividade é muito importante por permitir o trabalho em equipe por meio de diversão e aprendizado tornando as crianças mais unidas em torno de um objetivo comum.",
       title2: "Como jogar",
       description2: "Até quatro jogadores lançam os dados e o número em que os dados permanecem será o número de espaços que o jogador atual irá mover. Algumas casas possuem informações sobre o Asteroide Psique e sua Missão de Exploração. Nos quadrados verdes, o jogador move o seu foguete três espaços para a frente e nos quadrados cinzentos, o jogador move o seu foguete três espaços para trás. O jogador que chegar primeiro ao Asteróide Psique vence.",
+      title3: "Motivação do projeto",
+      description3: "O projeto tem grande impacto na sociedade no sentido do despertar para a defesa planetária e da importância da ciência para o desenvolvimento da divulgação científica no mundo. Enquanto as crianças se divertem, elas aprendem mais sobre o asteroide e a missão Psique porque, em algumas casas, há informações retiradas do site oficial da NASA desde a sua descoberta até o presente.",
+      title4: "Desenvolvimento de projeto",
+      description4: "A equipe criou o jogo utilizando o aplicativo CANVA para que pudesse ser impresso, recortado e montado facilmente para que as crianças pudessem fazê-lo junto com seus pais e/ou professores. Pensamos também nas questões ambientais para não utilizar muitos recursos como papel e imprimir muitas páginas, deixando o jogo em apenas uma página e outra com os itens necessários para a jogabilidade.",
+      title5: "Nosso objetivo futuro",
+      description5: "Para que o jogo seja utilizado nas escolas e distribuído em eventos STEM para toda a população.",
     },
     contact: {
       nameLabel: 'Nome',

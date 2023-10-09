@@ -44,7 +44,9 @@ main {
   justify-content: center;
   gap: 2rem;
   padding: 0 2rem;
-  height: 90vh;
+  height: 100%;
+  overflow: auto;
+  margin-top: 1rem;
 }
 
 .content {
@@ -162,7 +164,6 @@ main {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
 
 .logoNasaSpaceApps {
   height: 200px;

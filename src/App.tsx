@@ -50,9 +50,17 @@ function App() {
               <h2>{text.about.title2}</h2>
               <p>{text.about.description2}</p>
             </div>
-
-            <div className="cardButton">
-              <button type="submit">{texts[language].downloadButton}</button>
+            <div className="aboutText">
+              <h2>{text.about.title3}</h2>
+              <p>{text.about.description3}</p>
+            </div>
+            <div className="aboutText">
+              <h2>{text.about.title4}</h2>
+              <p>{text.about.description4}</p>
+            </div>
+            <div className="aboutText">
+              <h2>{text.about.title5}</h2>
+              <p>{text.about.description5}</p>
             </div>
           </div>
         );
@@ -140,7 +148,15 @@ function App() {
               <h1>{text.titlePage}</h1>
               <h3>{text.subTitlePage}</h3>
               <div className="cardButton">
-                <button>{text.downloadButton}</button>
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/1tMx-_PEfz2AzYvyNntduZMctqmsAitto/view"
+                    )
+                  }
+                >
+                  {text.downloadButton}
+                </button>
                 <p className="read-the-docs">
                   {text.downloadButtonDescription}
                 </p>
@@ -168,7 +184,10 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setOption("download")}>
+              <a
+                href="https://drive.google.com/file/d/1tMx-_PEfz2AzYvyNntduZMctqmsAitto/view"
+                target="_blank"
+              >
                 {text.header.download}
               </a>
             </li>
