@@ -27,7 +27,7 @@ function App() {
           onClick={() => setLanguage(`${lang}`)}
           style={{ textTransform: "uppercase" }}
         >
-          {texts[lang].flag || lang}
+          <img src={texts[lang].flag} alt="" />
         </a>
       ));
   };
@@ -64,8 +64,6 @@ function App() {
             </div>
           </div>
         );
-      case "download":
-        return <h1>Download</h1>;
       case "team":
         return (
           <div className="contactForm">
