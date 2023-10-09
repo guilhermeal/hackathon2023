@@ -1,0 +1,60 @@
+:root {
+  --white: #FFF;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+  --blue-100: #D0FAFD;
+  --blue-200: #95F3FA;
+  --blue-300: #5aedf7;
+  --blue-400: #15E5F4;
+  --blue-500: #0AC2CF;
+  --blue-600: #0897A1;
+  --blue-700: #04565C;
+  --blue-800: #034145;
+  --blue-900: #011617;
+  --pink-100: #FFD7E6;
+  --pink-200: #FFAECD;
+  --pink-300: #FFAECD;
+  --pink-400: #FF86B4;
+  --pink-500: #FF448D;
+  --pink-600: #FC0061;
+  --pink-700: #B80046;
+  --pink-800: #73002C;
+  --pink-900: #2E0012;
+  --green-100: #E4FFF5;
+  --green-200: #BCFFE5;
+  --green-300: #A1FFDB;
+  --green-400: #78FFCB;
+  --green-500: #42ffb7;
+  --green-600: #00E68E;
+  --green-700: #00A163;
+  --green-800: #005C39;
+  --green-900: #002E1C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--blue-900);
+  color: var(--gray-300);
+  font-synthesis: none;
+  min-width: 600px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
