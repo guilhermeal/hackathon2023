@@ -134,7 +134,7 @@ function App() {
         );
       default:
         return (
-          <>
+          <div className="contentDefault">
             <div className="logoPsyche">
               <img
                 src={reactLogo}
@@ -160,7 +160,7 @@ function App() {
                 </p>
               </div>
             </div>
-          </>
+          </div>
         );
     }
   };

@@ -1,5 +1,6 @@
 header {
   width: 100%;
+  position: fixed;
   color: var(--white);
   text-align: center;
   font-size: 1.2rem;
@@ -43,12 +44,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
   padding: 0 2rem;
   height: 90vh;
   max-height: 100vh;
   overflow: auto;
+}
+
+.contentDefault {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 8rem;
 }
 
 .content {
@@ -63,10 +74,10 @@ main {
 }
 
 .psyche {
-  width: 15rem;
-  -webkit-animation:spin 14s linear infinite;
-  -moz-animation:spin 14s linear infinite;
-  animation:spin 14s linear infinite;
+  width: 20rem;
+  -webkit-animation:spin 20s linear infinite;
+  -moz-animation:spin 20s linear infinite;
+  animation:spin 20s linear infinite;
 }
 
 .contactForm {
@@ -99,6 +110,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 .teamBox {
@@ -169,8 +181,8 @@ main {
 .logoNasaSpaceApps {
   height: 200px;
   position: fixed;
-  bottom: 3vh;
-  right: 0vw;
+  bottom: 0vh;
+  right: -2vw;
   align-items: flex-end;
   margin-right: 0;
 }
