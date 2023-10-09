@@ -1,27 +1,60 @@
-# React + TypeScript + Vite
+# 🚀 Project Asteroid Explorers 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Propose
+The project has a great impact on society in terms of awakening to planetary defense and how important science is for the development of scientific dissemination in the world. While the children are having fun, they learn more about the asteroid and the psyche mission because, in some homes, there is information taken from the official NASA website from its discovery to the present.
 
-Currently, two official plugins are available:
+* [Hackathon 2023](https://www.spaceappschallenge.org/2023/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##### Challenge chosen: 
+* [Plan a Party to Celebrate NASA's Journey to a Metal World](https://www.spaceappschallenge.org/2023/challenges/plan-a-party-to-celebrate-nasas-journey-to-a-metal-world/)
 
-## Expanding the ESLint configuration
+## ⛰️ Objective 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The team created the game using the CANVA application so that it could be printed, cut and assembled easily so that children could do it together with their parents and/or teachers. We also thought about environmental issues so that we don't use too many resources such as paper and printing too many pages, leaving the game on just one page and another with the items needed for gameplay.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+
+## 📱 Technologies
+* NodeJS
+* ViteJS
+* ReactJS
+* Typescript
+* Vercel
+
+## 🌎️ Dependencies
+* [Nasa Psyche](https://science.nasa.gov/mission/psyche/)
+
+
+## 💻️ Usage
+
+This application must run on web browser.
+
+##### Download:
+
+ ```bash
+  git clone git@github.com:guilhermeal/hackathon2023.git
+ ```
+
+##### Install dependicies:
+
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##### Start application:
+
+```bash
+npm run dev
+```
+
+##### Run at (check the port in terminal):
+
+```bash
+http://localhost:5173/
+```
+
+## ✒️ Created by
+[🐙 Guilherme Almeida](https://github.com/guilhermeal)
+
+## ✒️ License
+[GNU General Public License v3.0](https://api.github.com/licenses/gpl-3.0)
