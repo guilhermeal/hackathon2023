@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/asteroid.png";
 import { texts } from "./helpers/languages";
 import { team } from "./helpers/team";
-import logoNasaSpaceApps from "./assets/logoNasaSpaceApps.png";
+import logoNasaSpaceChallange from "./assets/logoNasaSpaceChallange.png";
+import logoNasaSpaceAppsCampinas from "./assets/logoNasaSpaceAppsCampinas.png";
 import "./styles/app.css";
 import { Person } from "./components/person";
 
@@ -22,6 +23,7 @@ function App() {
       .filter((lang) => lang !== language)
       .map((lang) => (
         <a
+          key={lang}
           className="flagLink"
           title={texts[lang].flagDescription}
           onClick={() => setLanguage(`${lang}`)}
@@ -30,6 +32,10 @@ function App() {
           <img src={texts[lang].flag} alt="" />
         </a>
       ));
+  };
+
+  const handleClickLink = (link: string, target?: "_top" | "_blank") => {
+    window.open(link, target ?? "_blank", "noopener noreferrer")?.focus();
   };
 
   const submitContactForm = () => {
@@ -41,26 +47,52 @@ function App() {
       case "about":
         return (
           <div className="contactForm">
-            <h1>{text.header.about}</h1>
-            <div className="aboutText">
+            <h1 key={1}>{text.header.about}</h1>
+            <div key={2} className="embedVideo">
+              <span className="blinking">
+                {text.about.loadingVideo}
+                <span className="dots">...</span>
+              </span>
+              <iframe
+                className="iframeVideo"
+                style={{ width: "100%", height: "100%" }}
+                src="https://www.youtube.com/embed/DtbqJCsQlEQ?si=yj3N-qTJL6VpLVgE"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+            <div key={3} className="aboutText">
               <h2>{text.about.title}</h2>
               <p>{text.about.description}</p>
             </div>
-            <div className="aboutText">
+            <div key={4} className="aboutText">
               <h2>{text.about.title2}</h2>
               <p>{text.about.description2}</p>
             </div>
-            <div className="aboutText">
+            <div key={5} className="aboutText">
               <h2>{text.about.title3}</h2>
               <p>{text.about.description3}</p>
             </div>
-            <div className="aboutText">
+            <div key={6} className="aboutText">
               <h2>{text.about.title4}</h2>
               <p>{text.about.description4}</p>
             </div>
-            <div className="aboutText">
+            <div key={7} className="aboutText">
               <h2>{text.about.title5}</h2>
               <p>{text.about.description5}</p>
+            </div>
+            <div>
+              <img
+                onClick={() =>
+                  handleClickLink(
+                    "https://www.spaceappschallenge.org/2023/locations/campinas/"
+                  )
+                }
+                className="link logoNasaCampinas"
+                title="Nasa Space Apps Campinas"
+                src={logoNasaSpaceAppsCampinas}
+                alt="Logo Nasa Space Apps Campinas"
+              />
             </div>
           </div>
         );
@@ -169,8 +201,8 @@ function App() {
     <div>
       <header>
         <nav>
-          <div></div>
-          <ul>
+          <div key={0}></div>
+          <ul key={1}>
             <li>
               <a href="#" onClick={() => setOption(undefined)}>
                 {text.header.home}
@@ -200,13 +232,19 @@ function App() {
               </a>
             </li>
           </ul>
-          <div>{returnAllLanguages()}</div>
+          <div key={2}>{returnAllLanguages()}</div>
         </nav>
       </header>
       <main>{renderContentOption(option)}</main>
       <img
-        className="logoNasaSpaceApps"
-        src={logoNasaSpaceApps}
+        onClick={() =>
+          handleClickLink(
+            "https://www.spaceappschallenge.org/2023/find-a-team/asteroid-explorers/?tab=project"
+          )
+        }
+        className="link logoNasa"
+        title={text.logoTitle}
+        src={logoNasaSpaceChallange}
         alt="Logo Nasa Space Apps"
       />
       <footer>

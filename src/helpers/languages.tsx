@@ -9,6 +9,7 @@ interface TextProps {
     subTitlePage: string;
     downloadButton: string;
     downloadButtonDescription: string;
+    logoTitle?: string;
     header: {
       home: string;
       about: string;
@@ -27,6 +28,7 @@ interface TextProps {
       description3?: string;
       description4?: string;
       description5?: string;
+      loadingVideo?: string;
     };
     contact: {
       nameLabel: string;
@@ -46,6 +48,7 @@ export const texts: TextProps = {
       "The idea of this game is to introduce participants to what the Project Asteroid Explorers will be like",
     downloadButton: "Click to download",
     downloadButtonDescription: "Click button download the PDF game",
+    logoTitle: "Go to our project on Nasa Space Apps Website",
     header: {
       home: "Home",
       about: "About",
@@ -55,6 +58,7 @@ export const texts: TextProps = {
     },
     about: {
       title: "Project summary",
+      loadingVideo: "Loading video",
       description:
         "We created a fun space trail game so that children aged 5 to 14 can learn about the mission and the asteroid Psyche in a fun and interactive way. With the board game, children develop their cognitive skills, they work on their emotions when waiting for their turn to play, and their mathematics when they roll the dice and need to count the spaces that will move. This type of activity is very important as it allows teamwork through fun and learning, making children more united around a common goal.",
       title2: "How to Play",
@@ -85,6 +89,7 @@ export const texts: TextProps = {
       "A ideia deste jogo é apresentar aos participantes como vai ser o Projeto Asteróide Explorers",
     downloadButton: "Clique para baixar",
     downloadButtonDescription: "Clique para fazer o download do jogo em PDF",
+    logoTitle: "Ir para página do nosso projeto no site da Nasa Space Apps",
     header: {
       home: "Início",
       about: "Sobre",
@@ -94,6 +99,7 @@ export const texts: TextProps = {
     },
     about: {
       title: "Resumo do projeto",
+      loadingVideo: "Carregando video",
       description:
         "Elaboramos um jogo divertido no formato de trilha espacial para que as crianças de 5 a 14 anos possam aprender sobre a missão e o asteroide Psyche de forma lúdica e interativa. Com o jogo de tabuleiro, as crianças desenvolvem a parte cognitiva, trabalha as emoções no momento de esperar sua vez de jogar, e a matemática no momento em que joga o dado e precisa contar as casas que irão se movimentar. Esse tipo de atividade é muito importante por permitir o trabalho em equipe por meio de diversão e aprendizado tornando as crianças mais unidas em torno de um objetivo comum.",
       title2: "Como jogar",
